@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/doctor-hours/static/css/main.575eaf50.chunk.css",
+    "main.js": "/doctor-hours/static/js/main.22d7aa5c.chunk.js",
+    "main.js.map": "/doctor-hours/static/js/main.22d7aa5c.chunk.js.map",
+    "runtime-main.js": "/doctor-hours/static/js/runtime-main.1f8da6e8.js",
+    "runtime-main.js.map": "/doctor-hours/static/js/runtime-main.1f8da6e8.js.map",
+    "static/js/2.0c08b3a3.chunk.js": "/doctor-hours/static/js/2.0c08b3a3.chunk.js",
+    "static/js/2.0c08b3a3.chunk.js.map": "/doctor-hours/static/js/2.0c08b3a3.chunk.js.map",
+    "static/js/3.81e24d23.chunk.js": "/doctor-hours/static/js/3.81e24d23.chunk.js",
+    "static/js/3.81e24d23.chunk.js.map": "/doctor-hours/static/js/3.81e24d23.chunk.js.map",
+    "index.html": "/doctor-hours/index.html",
+    "static/css/main.575eaf50.chunk.css.map": "/doctor-hours/static/css/main.575eaf50.chunk.css.map",
+    "static/js/2.0c08b3a3.chunk.js.LICENSE.txt": "/doctor-hours/static/js/2.0c08b3a3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f8da6e8.js",
+    "static/js/2.0c08b3a3.chunk.js",
+    "static/css/main.575eaf50.chunk.css",
+    "static/js/main.22d7aa5c.chunk.js"
+  ]
+}

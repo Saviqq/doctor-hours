@@ -1,0 +1,123 @@
+:root {
+  --primary: #071e22;
+  --secondary: #679289;
+  --availible: #f4c095;
+  --occupied: #ee2e31;
+  --invalid: #6d6875;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.week {
+  display: flex;
+  min-height: 400px;
+}
+
+.day-container {
+  width: 16.66%;
+  text-align: center;
+  border: 1px solid var(--primary);
+}
+
+.day {
+  padding: 5px;
+}
+
+.current-day {
+  font-weight: bold;
+}
+
+.date {
+  font-size: 12px;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.timeslot {
+  padding: 5px;
+  border-top: 1px solid var(--primary);
+  cursor: pointer;
+}
+
+.availible,
+.legend-availible {
+  background-color: var(--availible);
+}
+
+.availible:hover {
+  background-color: var(--secondary);
+}
+
+.occupied {
+  background-color: var(--occupied);
+  cursor: not-allowed;
+}
+
+.selected {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.invalid,
+.break {
+  background-color: var(--invalid);
+  cursor: not-allowed;
+}
+
+.control {
+  display: flex;
+  border: 1px solid var(--primary);
+}
+
+.divider {
+  border: 1px solid var(--primary);
+}
+
+.control-button {
+  cursor: pointer;
+  flex: 1 1 0px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.control-button:hover {
+  text-decoration: underline;
+}
+
+.legend-container {
+  margin-top: 20px;
+}
+
+.legend-button {
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.legend {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  margin: 5px 0px;
+}
+
+.legend-color {
+  width: 10%;
+  border: 1px solid var(--primary);
+}
+
+.legend-text {
+  padding: 0px 10px;
+}

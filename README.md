@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# Dr. Albert Crentist's office hours
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created as front-end assigment for InfoBip company
 
-## Available Scripts
+## Decissions
 
-In the project directory, you can run:
+In the project few decissions had to be made based on assigment
 
-### `npm start`
+### Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I have chosen React library with TypeScript integration for implementation. It's the
+technology for which I am being evaluated (as javaScript FE dev) and I've added
+TypeScript to improve my development experience.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Styling
 
-### `npm test`
+I have decided not to use any styling/component library and style components in 'vanilla' fashion. The reason was to atleast
+somehow show my CSS skills and also there was no need for complex styling libraries for such a small project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Date managment
 
-### `npm run build`
+While I have decided to not complicate my app with styling/components lib I made decission to use very handy lib for
+handling and manipulating dates. I wanted to relly on robust, safe and tested library as Date operations are
+core of the whole assigment. Other option would be to create some own utils functions for it, but that would
+increase time required for the assigment and also I didn't want to re-invent the wheel :)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Data fetching
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+One of the decissions was how to fetch data for the app. I was considering creating some simple BE nodejs app for it, but
+from the assigment and time constraints I have realized it's better not to over-engineer it and so I have decided to mock
+BE with data generation and storing it using React Context
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Additional Improvements
 
-### `npm run eject`
+There are few improvements to the app that I can think of
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Translations
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Currently I have texts right in components as applicatio is small and it's not so messy, in future it should be
+replaced with some translation library i.e https://react.i18next.com/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Tests
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Some simple tests to showcase skills with testing React apps
 
-## Learn More
+### Styling and color scheme
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+More time playing with styling and trying different colour schemes could improve looks and UX of the app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Mobile friendly
+
+I have decided to omit responsivity of the calendar as I don't think it was part of the assigment and due time constrains ,
+but it would be nice to showcase skills with responsivness

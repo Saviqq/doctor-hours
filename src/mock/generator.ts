@@ -40,8 +40,11 @@ export default class CalendarWeekGenerator {
         const invalidTerms = this.initializeOddSaturdayOrPastDateTerms();
 
         const weekDate = moment().week(week);
+        const isCurrWeek = moment().week() === week;
         const isEvenSaturday = moment(weekDate).isoWeekday("Saturday").date() % 2 === 1;
         const today = moment();
+        let generateTerms = (isEvenSaturday ? 6 : 5) - (isCurrWeek ? today.day() : 0);
+        generateTerms = !isCurrWeek ? PRE_GENERATED_TERMS : 4 * generateTerms;
 
         let weekToGenerate = {
             monday: today.isAfter(moment(weekDate).isoWeekday("Monday")) ? invalidTerms : initTerms,
@@ -53,7 +56,7 @@ export default class CalendarWeekGenerator {
         };
 
         if(this.isValidWeek(week)) {
-            for(let i = 0; i < PRE_GENERATED_TERMS; i++) {
+            for(let i = 0; i < generateTerms; i++) {
                 let rSlot = this.randomIntFromInterval(0, TERMS_COUNT - 1);
                 rSlot = rSlot === BREAK_TERM_INDEX ? rSlot + this.randomIntFromInterval(-6, 5) : rSlot;
     
